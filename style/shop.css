@@ -1,0 +1,90 @@
+/* #region Main */
+main h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background: url(/images/stadion.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.shop {
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.shop figure {
+  transition: 0.5s;
+  margin: 0;
+  cursor: pointer;
+}
+
+.shop figure img {
+  width: 100%;
+}
+
+.shop figure:hover {
+  transform: scale(1.1);
+}
+
+table {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+table td img {
+  transition: 0.5s;
+}
+
+table td img:hover {
+  transform: scale(1.5);
+}
+
+td button {
+  transition: 0.5 ease;
+}
+
+td button:hover {
+  transform: scale(1.1);
+}
+
+tr td:nth-child(3) {
+  font-size: 2.5rem;
+}
+
+.button {
+  margin-top: 1em;
+  transition: 0.5 ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+/* #endregion Main */
+
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 20px;
+  }
+  .shop {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

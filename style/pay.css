@@ -1,0 +1,65 @@
+/* #region Main */
+
+main h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background: url(/images/stadion.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+form {
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+  padding: 1em;
+  color: white;
+  background-color: black;
+  max-width: 800px;
+}
+
+input {
+  border: none;
+  border-bottom: 0.1px solid black;
+  border-radius: 20px;
+}
+
+textarea {
+  max-width: 100%;
+  width: 50em;
+  height: 15em;
+}
+fieldset {
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+input.button {
+  min-width: 100%;
+  padding: 1em;
+  text-align: center;
+  transition: 0.5 ease;
+}
+input.button:hover {
+  transform: scale(1.1);
+}
+/* #endregion Main */
+
+@media (max-width: 800px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}

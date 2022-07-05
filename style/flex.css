@@ -1,0 +1,70 @@
+/* #region Main */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/images/stadion.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+.col {
+  flex-basis: 50%;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  min-height: auto;
+  border-radius: 20px;
+}
+
+.col img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.col img:hover {
+  transform: scale(1.1);
+}
+/* #endregion Main */
+
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 20px;
+  }
+  .logo {
+    margin-right: 2.5em;
+  }
+}

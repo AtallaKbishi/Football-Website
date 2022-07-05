@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/pay.css" />
+    <link rel="stylesheet" href="./style/samehf.css" />
+    <link
+      rel="icon"
+      type="./images/FC-Barcelona-icon.png"
+      href="./images/FC-Barcelona-icon.png"
+    />
+    <title>Pay</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><img src="./images/FC-Barcelona-icon.png" alt="img" /> fc Barcelona</a
+      >
+      <nav class="navigation">
+        <a href="./project.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./history.html">History</a>
+        <a href="./players.html">Players</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./pay.html">Pay</a>
+        <a href="./imageflex.html">Flex</a>
+        <a href="./imagegrid.html">Grid</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Pay</h1>
+      <form>
+        <p>Please fill the form and then press the buttom</p>
+
+        <label
+          >First Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="username"
+            required
+          />
+        </label>
+        <p></p>
+        <label
+          >Address:
+          <input type="text" name="name" placeholder="address" required />
+        </label>
+        <p></p>
+        <label
+          >Select payment:
+          <select name="occupation">
+            <option value="Visa">Visa</option>
+            <option label="Mastercard"></option>
+            <option label="American-express"></option>
+            <option label="Diners"></option>
+            <option label="Atalla-express(VIP ONLY)"></option>
+          </select>
+        </label>
+        <p></p>
+        <label
+          >Card number:
+          <input
+            type="text"
+            name="text"
+            placeholder="123456789*******"
+            required
+            maxlength="16"
+          />
+        </label>
+        <p></p>
+        <label
+          >Visa Date:
+          <input type="date" name="date" required />
+        </label>
+        <p></p>
+        <label
+          >CVC:
+          <input
+            type="text"
+            name="text"
+            placeholder="CVC 3**"
+            required
+            maxlength="3"
+          />
+        </label>
+        <p></p>
+        <label
+          >Email:
+          <input type="email" name="email" placeholder="email" required />
+        </label>
+        <p></p>
+        <label
+          >Phone Number:
+          <input
+            type="tel"
+            name="phone"
+            maxlength="10"
+            placeholder="050-996****"
+          />
+        </label>
+        <p></p>
+
+        <div class="checkbox">
+          <input type="checkbox" id="accept" required />
+          <label for="accept">I'm not robot</label>
+        </div>
+        <div>
+          <input class="button" type="submit" value="Purchase" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p class="footer-title">Copyrights @ Atalla Kbishi</p>
+    </footer>
+  </body>
+</html>

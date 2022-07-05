@@ -1,0 +1,60 @@
+/* #region Main */
+
+main h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/images/stadion.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+table {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 3rem;
+  max-width: 800px;
+  width: 500;
+}
+
+table td img {
+  transition: 0.5s;
+}
+
+table td img:hover {
+  transform: scale(1.5);
+}
+/* #endregion Main */
+
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  .players {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}

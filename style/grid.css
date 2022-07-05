@@ -1,0 +1,59 @@
+/* #region Main */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/images/stadion.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-style: italic;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  min-height: auto;
+  border-radius: 20px;
+}
+
+.container figure {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container figure:hover {
+  transform: scale(1.1);
+}
+/* #endregion Main */
+
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 20px;
+  }
+  .logo {
+    margin-right: 2.5em;
+  }
+}
